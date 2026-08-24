@@ -33,3 +33,7 @@ jobs:
           PYTHONPATH: .
         run: |
           pytest -v
+
+      - name: Build Docker image
+        run: |
+          docker build -t devops-health-api:latest .
